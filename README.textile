@@ -1,0 +1,7 @@
+h1. RubyMotion Simple Dual Screen
+
+This is a simple example/conversion of the Apple secondary screen paper in to RubyMotion
+
+IMPORTANT NOTE: The simulator is great for testing how your secondary screen should look/work, however if you use the TV Out menu to adjust the secondary screen (connecting/disconnecting it while the app is running or even just changing the resolution) it will quit back to Springboard
+
+It works by simply checking UIScreen.screens for more than one screen (one is built in to all the devices) and then listening to UIScreenDidConnectNotification/UIScreenDidDisconnectNotification to configure/remove the view on the secondary screen.
